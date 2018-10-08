@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Json</title>
+    </head>
+    <body>
+    <h2>Registeration Form</h2>
+        <form onsubmit="return onSubmit(this)">
+        <label>Student id:</label>
+            <input name="ID" placeholder="121"><br>
+            
+            <label>Name:</label>
+            <input name="UserName" placeholder="john"><br>
+            
+            <label>Course:</label>
+            <input name="Course" placeholder="ui"><br>
+            
+            <label>Contact:</label>
+            <input name="Mobilenumber" placeholder="6655259905">
+            
+            <button type="submit">submit</button>
+            
+            
+        
+        
+        
+        </form>
+    </body>
+        
+        <script>
+        function onSubmit(form){
+            var data= JSON.stringify($(form).serializeArray());
+            console.log(data);
+            return false;
+            }
+        
+        </script>
+       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        
+        
+        
+        
+    
+    
+    
+    
+    
